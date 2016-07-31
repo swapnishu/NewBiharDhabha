@@ -3,14 +3,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/background_dark"
     tools:context="com.example.swapnil.newbiharidhabha.MainActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/food"
+        android:id="@+id/food"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/food"
+        android:text="Welcome To your Bihari Dhabha"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_light"
+        android:id="@+id/heading"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/heading"
+        android:layout_marginTop="10dp"
+        android:text="We serve delicious bihari food who crave for home made bihari foods in bangalore."
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:id="@+id/description"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timingLabel"
+        android:text="Timings"
+        android:textSize="22sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_below="@+id/description"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timing"
+        android:text="Open 9 AM to 11 PM All Days
+Will be closed on Public Holidays"
+        android:textSize="22sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_below="@+id/timingLabel"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressLabel"
+        android:text="Address:"
+        android:textSize="24sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_below="@+id/timing"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/address"
+        android:text="No 4, Paratha Gali, Kodihalli, Bangalore - 560017"
+        android:textSize="22sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_below="@+id/addressLabel"/>
 </RelativeLayout>
