@@ -8,7 +8,7 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="200sp"
+        android:layout_height="150sp"
         android:scaleType="centerCrop"
         android:src="@drawable/food"
         android:id="@+id/food"/>
@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/food"
-        android:text="Welcome To your Bihari Dhabha"
+        android:text="Welcome To our Bihari Dhabha"
         android:textSize="26sp"
         android:textStyle="bold"
         android:textColor="@android:color/holo_blue_light"
@@ -28,8 +28,9 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/heading"
         android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
         android:text="We serve delicious bihari food who crave for home made bihari foods in bangalore."
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         android:textColor="@android:color/white"
         android:id="@+id/description"/>
@@ -37,37 +38,53 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/timingLabel"
-        android:text="Timings"
-        android:textSize="22sp"
+        android:text="Timings: Open 9 AM to 11 PM All Days
+Will be closed on Public Holidays"
+        android:paddingLeft="5dp"
+        android:textSize="16sp"
         android:layout_marginTop="15dp"
         android:textColor="@android:color/holo_blue_bright"
         android:layout_below="@+id/description"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/timing"
-        android:text="Open 9 AM to 11 PM All Days
-Will be closed on Public Holidays"
-        android:textSize="22sp"
-        android:layout_marginTop="5dp"
-        android:textColor="@android:color/holo_blue_bright"
-        android:layout_below="@+id/timingLabel"/>
+        android:id="@+id/phoneLabel"
+        android:layout_below="@+id/timingLabel"
+        android:textSize="16sp"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="bold"
+        android:text="Call Us:09999101010 or order online through our website:www.biharidhabha.com"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/addressLabel"
         android:text="Address:"
-        android:textSize="24sp"
+        android:textSize="16sp"
+        android:paddingLeft="5dp"
         android:layout_marginTop="15dp"
         android:textColor="@android:color/holo_blue_bright"
-        android:layout_below="@+id/timing"/>
+        android:layout_below="@+id/phoneLabel"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/address"
+        android:paddingLeft="5dp"
         android:text="No 4, Paratha Gali, Kodihalli, Bangalore - 560017"
-        android:textSize="22sp"
+        android:textSize="16sp"
         android:layout_marginTop="5dp"
         android:textColor="@android:color/holo_blue_bright"
         android:layout_below="@+id/addressLabel"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="~ Come and Enjoy Food"
+        android:textStyle="italic"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="16sp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"/>
 </RelativeLayout>
